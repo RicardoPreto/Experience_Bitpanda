@@ -1,0 +1,1 @@
+The first 3000 customers who register through the tracking link provided and who purchase a total of at least €25 in any crypto assets on the Bitpanda Broker during the Promotion Period will receive a Welcome Bonus of 400,000 PEPE Tokens or 15 EUR
