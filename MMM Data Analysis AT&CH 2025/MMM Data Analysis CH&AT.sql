@@ -14,7 +14,6 @@ WITH first_trade AS (
     WHERE 
         trades.user_country = 'Austria'
         -- trades.user_country = 'Switzerland'
-        AND trades.transaction_date >= '2022-01-01'
         AND trades.trade_type = 'buy'
         AND trades.platform = 'bitpanda'
     QUALIFY 
@@ -28,6 +27,8 @@ SELECT
     SUM(first_trade.trade_fee_euro) / NULLIF(SUM(first_trade.trade_amount_euro), 0) AS revenue
 FROM 
     first_trade
+WHERE
+    trades.transaction_date >= '2022-01-01'
 GROUP BY 
     trade_week, 
     first_trade.asset_symbol
