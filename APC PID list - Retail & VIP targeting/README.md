@@ -1,0 +1,1 @@
+We need to create separate communication for Retail customers (excluding VIP customers) and VIP customers for the Anti-Phishing Code. The communication will be delivered through email and In-App stories to all customers. 
